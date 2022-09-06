@@ -18,7 +18,7 @@ recyclerView.addItemDecoration(spacing)
 spacing = RecyclerViewSpacing(10f, 10f)
 recyclerView.addItemDecoration(spacing)
 ```
-![contents](https://xkz-1252121784.cos.ap-chengdu.myqcloud.com/rv2.jpeg)
+![contents](https://xkz-1252121784.cos.ap-chengdu.myqcloud.com/rv2.png)
 
 
 3.为每个item添加10dp间距（左右下），并且整个recyclerview左右添加-10dp间距
@@ -26,7 +26,7 @@ recyclerView.addItemDecoration(spacing)
 spacing = RecyclerViewSpacing(10f, -10f)
 recyclerView.addItemDecoration(spacing)
 ```
-![contents](https://xkz-1252121784.cos.ap-chengdu.myqcloud.com/rv3.jpeg)
+![contents](https://xkz-1252121784.cos.ap-chengdu.myqcloud.com/rv3.png)
 
 
 4.为每个item添加10dp间距（左右下），并且整个recyclerview左右添加10dp间距，并且banner（占满1行）的取消左右下间距
@@ -35,7 +35,7 @@ spacing = RecyclerViewSpacing(10f, 10f)
 spacing.needVerticalSpacingInSingleLine = false
 recyclerView.addItemDecoration(spacing)
 ```
-![contents](https://xkz-1252121784.cos.ap-chengdu.myqcloud.com/rv4.jpeg)
+![contents](https://xkz-1252121784.cos.ap-chengdu.myqcloud.com/rv4.png)
 
 ## 推理过程
 1.算出均等间距的公式
