@@ -47,15 +47,15 @@ recyclerView.addItemDecoration(spacing)
 每个item占用的总间距：itemAllSpacing = spacing *（n + 1）/n
 
 item 0  
-    left = spacing  -> **spacing**
+    left = spacing  -> spacing
     right = itemAllSpacing - spacing
 
 item 1
-     left = spacing - (itemAllSpacing - spacing)   ->   **2 * spacing - itemAllSpacing**
+     left = spacing - (itemAllSpacing - spacing)   ->   2 * spacing - itemAllSpacing
      right = itemAllSpacing - (2 * spacing - itemAllSpacing)    ->   2 * itemAllSpacing - 2 * spacing
 
 item 2
-     left = spacing - (2*itemAllSpacing - 2 * spacing)   ->   **3 * spacing - 2 * itemAllSpacing**
+     left = spacing - (2*itemAllSpacing - 2 * spacing)   ->   3 * spacing - 2 * itemAllSpacing
      
 由上可得出结论：
 每个item的left = (index + 1) * spacing - index * itemAllSpacing
