@@ -41,20 +41,20 @@ recyclerView.addItemDecoration(spacing)
 1.算出均等间距的公式
 ```
 假设
-总item数：n
+每行总item数：n
 均等间距：spacing
 每个item所在行的下标：index
 每个item占用的总间距：itemAllSpacing = spacing *（n + 1）/n
 
-item 0  
+index = 0  
     left = spacing  -> spacing
     right = itemAllSpacing - spacing
 
-item 1
+index = 1
      left = spacing - (itemAllSpacing - spacing)   ->   2 * spacing - itemAllSpacing
-     right = itemAllSpacing - (2 * spacing - itemAllSpacing)    ->   2 * itemAllSpacing - 2 * spacing
+     right = itemAllSpacing - (2 * spacing - itemAllSpacing)   ->   2 * itemAllSpacing - 2 * spacing
 
-item 2
+index = 2
      left = spacing - (2*itemAllSpacing - 2 * spacing)   ->   3 * spacing - 2 * itemAllSpacing
      
 由上可得出结论：
